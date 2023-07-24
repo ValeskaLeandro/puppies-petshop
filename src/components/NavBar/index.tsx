@@ -7,7 +7,7 @@ const NavBar = () => {
   const [windowWidth, setWindowWidth] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
   const color = isMobile ? "#2b2b2b" : "#9dcc96";
-  
+
   useEffect(() => {    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -20,10 +20,10 @@ const NavBar = () => {
   return(
     <Header>
       <Logo>
-        <h1><MdPets style={{
-          fill: 'url(#linear-gradient)',
-        }}/>
-        puppies.com</h1>
+        <a href="#">
+          <h1><MdPets style={{fill: 'url(#linear-gradient)'}}/>puppies.com</h1>
+        </a>
+        
         <svg style={{ height: 0, width: 0, position: 'absolute' }}>
         <defs>
           <linearGradient id="linear-gradient" gradientTransform="rotate(45)">
@@ -31,11 +31,10 @@ const NavBar = () => {
             <stop offset="100%" stopColor="#96cdbd" />
           </linearGradient>
         </defs>
-        </svg>
-        
+        </svg>        
       </Logo>
       <Nav>
-        <ul className={isMobile ? "menu-mobile": "menu"}>
+        <ul className={isMobile ? "menu-mobile": ""}>
           <li><a href="#"><MdOutlineHome style={{fill: color}}/> <span>Home</span></a></li>
           <li><a href="#"><MdMiscellaneousServices style={{fill: color}}/> <span>Serviços</span></a></li>
           <li><a href="#"><MdOutlinePeopleAlt style={{fill: color}}/> <span>Sobre nós</span></a></li>

@@ -6,6 +6,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2rem;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -15,7 +16,13 @@ export const Header = styled.header`
 `
 
 export const Logo = styled.div`
-  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+  }
+
 `
 
 export const Nav = styled.nav`
@@ -44,15 +51,14 @@ export const Nav = styled.nav`
     margin-right: 1rem;
     }
   }
-  .menu {
-  }
+  
   .menu-mobile {
     background-color: var(--pink);
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 1.25rem;
+    padding: 1rem;
     border-radius: 2rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
@@ -61,8 +67,8 @@ export const Nav = styled.nav`
       display: none;
     }
     li {
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;

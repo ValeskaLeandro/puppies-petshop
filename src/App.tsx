@@ -1,5 +1,6 @@
 
 import './App.css'
+import MainBanner from './components/MainBanner'
 import NavBar from './components/NavBar'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <MainBanner />
     </>
   )
 }
