@@ -1,5 +1,24 @@
+:root {
+  --pink: #efa6c2;
+  --green: #9dcc96;
+  --ligth-green: #a8dedb;
+  --dark-blue: #1f2687;
+  --gray: #2b2b2b;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: var(--gray);
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
 }
