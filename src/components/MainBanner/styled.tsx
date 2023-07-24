@@ -14,6 +14,7 @@ export const Content = styled.div`
   height: 60vh;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 
   .image, .texts {
     flex: 1;

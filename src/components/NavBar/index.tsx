@@ -35,8 +35,8 @@ const NavBar = () => {
       </Logo>
       <Nav>
         <ul className={isMobile ? "menu-mobile": ""}>
-          <li><a href="#"><MdOutlineHome style={{fill: color}}/> <span>Home</span></a></li>
-          <li><a href="#"><MdMiscellaneousServices style={{fill: color}}/> <span>Serviços</span></a></li>
+          <li><a href="#home"><MdOutlineHome style={{fill: color}}/> <span>Home</span></a></li>
+          <li><a href="#services"><MdMiscellaneousServices style={{fill: color}}/> <span>Serviços</span></a></li>
           <li><a href="#"><MdOutlinePeopleAlt style={{fill: color}}/> <span>Sobre nós</span></a></li>
           <li><a href="#"><BsBagHeartFill style={{fill: color}}/> <span>Produtos</span></a></li>
           <li><a href="#"><BsEnvelopeOpenHeart style={{fill: color}}/> <span>Contato</span></a></li>
