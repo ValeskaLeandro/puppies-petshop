@@ -6,7 +6,6 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
 
   @media (max-width: 1000px) {
     flex-direction: column;

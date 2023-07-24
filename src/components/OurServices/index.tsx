@@ -1,4 +1,4 @@
-import Card from "../MainBanner/Card";
+import Card from "../Card";
 import { Container, Content } from "./styled"
 
 export interface Service {

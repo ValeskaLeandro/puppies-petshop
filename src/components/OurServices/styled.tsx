@@ -44,6 +44,9 @@ export const Content = styled.div`
   }
 
   @media (max-width: 750px) {
+    h2 {
+    font-size: 1rem;
+  }
     .grid{
       grid-template-columns: 1fr;
     }
