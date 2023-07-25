@@ -38,10 +38,10 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgba(168, 222, 219, .7), rgba(168, 222, 219, .7)), url("/img/footprints1.svg");
+    background-image: url("/img/footprints1.svg");
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom right;
   }
 
   .image {
