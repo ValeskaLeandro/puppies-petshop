@@ -2,6 +2,7 @@
 import './App.css'
 import About from './components/About'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import MainBanner from './components/MainBanner'
 import NavBar from './components/NavBar'
 import OurServices from './components/OurServices'
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Products products={products} />
       <Contact/>
+      <Footer />
     </>
   )
 }

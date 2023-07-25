@@ -54,7 +54,7 @@ export const Nav = styled.nav`
   .menu-mobile {
     background-color: var(--pink);
     position: fixed;
-    bottom: 20px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     padding: 1rem;

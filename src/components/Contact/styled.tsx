@@ -4,9 +4,9 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
   background-color: var(--pink);
   padding: 3rem 0;
+  margin-bottom: 1rem;
 `
 export const Content = styled.div`
   width: 70%;
@@ -79,6 +79,9 @@ export const Content = styled.div`
   }
   .button button:hover {
     background-color: var(--ligth-green);
+  }
+  @media (max-width: 1000px) {
+    width: 80%;
   }
 
   @media (max-width: 750px) {
