@@ -3,7 +3,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import { settings } from "../../utils/settings"
 import CardProduct from '../CardProduct';
-import { Container, Content } from './styled';
+import { Content } from './styled';
+import { Container } from '../../styles/styled-global';
 
 export interface Product {
   id: number,

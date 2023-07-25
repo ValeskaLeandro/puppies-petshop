@@ -1,4 +1,5 @@
-import { Container, Content } from "./styled"
+import { Container } from "../../styles/styled-global"
+import { Content } from "./styled"
 
 const About = () => {
   return(

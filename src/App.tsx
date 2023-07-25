@@ -1,6 +1,7 @@
 
 import './App.css'
 import About from './components/About'
+import Contact from './components/Contact'
 import MainBanner from './components/MainBanner'
 import NavBar from './components/NavBar'
 import OurServices from './components/OurServices'
@@ -16,6 +17,7 @@ function App() {
       <OurServices services={services}/>
       <About />
       <Products products={products} />
+      <Contact/>
     </>
   )
 }
