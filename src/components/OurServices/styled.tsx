@@ -4,9 +4,10 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(rgba(245, 245, 245, .93), rgba(245, 245, 245, .93)), url("/img/sl_011023_55240_03.jpg");
+  background-image: linear-gradient(rgba(245, 245, 245, .93), rgba(245, 245, 245, .93)), url("/img/footprints.jpg");
   background-size: 30%;  
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 `
 
 export const Content = styled.div`
@@ -20,6 +21,10 @@ export const Content = styled.div`
     padding: 2rem;
     font-size: 2rem;
     text-transform: uppercase;
+
+    span {
+      border-bottom: 2px solid var(--pink);
+    }
   }
 
   .grid {

@@ -4,16 +4,16 @@ import { MdPets, MdOutlineHome, MdMiscellaneousServices, MdOutlinePeopleAlt} fro
 import { BsBagHeartFill, BsEnvelopeOpenHeart } from "react-icons/bs";
    
 const NavBar = () => { 
-  const [windowWidth, setWindowWidth] = useState(0)
+  const [windowWidth, setWindowWidth] = useState<number | null>(null)
   const [isMobile, setIsMobile] = useState(false)
-  const color = isMobile ? "#2b2b2b" : "#9dcc96";
-
+  const color = isMobile ? "#2b2b2b" : "#a8dedb";
+  console.log(isMobile, windowWidth)
   useEffect(() => {    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
     window.addEventListener("resize", handleResize);
-    if(windowWidth < 1000) setIsMobile(true); 
+    if(windowWidth && windowWidth < 1000) setIsMobile(true); 
     else setIsMobile(false)
     return () => window.removeEventListener("resize", handleResize);
   }, [windowWidth]);
@@ -37,9 +37,9 @@ const NavBar = () => {
         <ul className={isMobile ? "menu-mobile": ""}>
           <li><a href="#home"><MdOutlineHome style={{fill: color}}/> <span>Home</span></a></li>
           <li><a href="#services"><MdMiscellaneousServices style={{fill: color}}/> <span>Serviços</span></a></li>
-          <li><a href="#"><MdOutlinePeopleAlt style={{fill: color}}/> <span>Sobre nós</span></a></li>
-          <li><a href="#"><BsBagHeartFill style={{fill: color}}/> <span>Produtos</span></a></li>
-          <li><a href="#"><BsEnvelopeOpenHeart style={{fill: color}}/> <span>Contato</span></a></li>
+          <li><a href="#about"><MdOutlinePeopleAlt style={{fill: color}}/> <span>Sobre nós</span></a></li>
+          <li><a href="#products"><BsBagHeartFill style={{fill: color}}/> <span>Promoções</span></a></li>
+          <li><a href="#contact"><BsEnvelopeOpenHeart style={{fill: color}}/> <span>Contato</span></a></li>
         </ul>
       </Nav>
     </Header>

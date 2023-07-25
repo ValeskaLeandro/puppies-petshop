@@ -15,7 +15,7 @@ const OurServices = ({services}: OurServicesProps) => {
   return(
     <Container>
       <Content id="services">
-        <h2>Nossos serviços</h2>
+        <h2>Nossos <span>serviços</span></h2>
         <div className="grid">
           {services && services.map((service) => (
             <Card key={service.id} icon={service.icon} 
