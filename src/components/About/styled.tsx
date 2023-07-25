@@ -11,14 +11,23 @@ export const Content = styled.div`
   width: 70%;
   max-width: 1500px;
   display: flex;
+  
   justify-content: center;
   align-items: center;
   .rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60%;
+    height: 100%;
+    background-image: url("/img/footprint.svg");
+    background-size: 30%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
       h2 {
       margin-bottom: 2rem;
       text-transform: uppercase;
-      text-align: center;
       font-size: 2rem;
 
       span {
