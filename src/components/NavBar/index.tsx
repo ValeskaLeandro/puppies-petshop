@@ -4,10 +4,10 @@ import { MdPets, MdOutlineHome, MdMiscellaneousServices, MdOutlinePeopleAlt} fro
 import { BsBagHeartFill, BsEnvelopeOpenHeart } from "react-icons/bs";
    
 const NavBar = () => { 
-  const [windowWidth, setWindowWidth] = useState<number | null>(null)
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
   const [isMobile, setIsMobile] = useState(false)
   const color = isMobile ? "#2b2b2b" : "#a8dedb";
-  console.log(isMobile, windowWidth)
+
   useEffect(() => {    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -17,6 +17,7 @@ const NavBar = () => {
     else setIsMobile(false)
     return () => window.removeEventListener("resize", handleResize);
   }, [windowWidth]);
+  
   return(
     <Header>
       <Logo>

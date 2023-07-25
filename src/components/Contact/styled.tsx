@@ -52,7 +52,9 @@ export const Content = styled.div`
   }
 
   input:focus ~ label, 
-  textarea:focus ~ label{
+  textarea:focus ~ label, 
+  input:not(:placeholder-shown) ~ label, 
+  textarea:not(:placeholder-shown) ~ label  {
     transform: translateY(-50%) scale(.8);
     background-color: var(--pink);
     padding: 0 .2rem;

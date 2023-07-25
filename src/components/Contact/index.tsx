@@ -11,15 +11,15 @@ const Contact = () => {
           <h2>Entre em contato.</h2>
           <p>Estamos disponíveis e prontos para atendê-lo.</p>
           <div className="input-group">
-            <input type="text" name="name"/>
+            <input type="text" name="name" placeholder=" "/>
             <label htmlFor="name">Nome</label>
           </div>
           <div className="input-group">
-            <input type="text" name="email"/>
+            <input type="text" name="email" placeholder=" "/>
             <label htmlFor="email">E-mail</label>
           </div>
           <div className="input-group">
-            <textarea name="message"  rows={5}></textarea>
+            <textarea name="message"  rows={5} placeholder=" "></textarea>
             <label htmlFor="message">Mensagem</label>
           </div>
           <div className="button">
