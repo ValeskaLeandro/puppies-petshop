@@ -10,7 +10,7 @@ const MainBanner = () => {
         </div>
 
         <div className="image">
-          <img src="/img/dog-and-cat.png" alt="Um pinscher sentado nas costa de um gato cinza." />
+          <img src="./img/dog-and-cat.png" alt="Um pinscher sentado nas costa de um gato cinza." />
         </div>
       </Content>
     </Container>

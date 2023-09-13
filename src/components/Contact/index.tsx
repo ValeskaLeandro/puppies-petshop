@@ -5,7 +5,7 @@ const Contact = () => {
     <Container id="contact">
       <Content>
         <div className="img">
-          <img src="/img/labrador.png" alt="" />
+          <img src="./img/labrador.png" alt="" />
         </div>
         <div className="contact">
           <h2>Entre em contato.</h2>

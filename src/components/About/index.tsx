@@ -6,7 +6,7 @@ const About = () => {
     <Container id="about">
       <Content>
         <div className="left">
-          <img src="/img/img-dog.png" alt="Cachorro da raça basenji." />
+          <img src="./img/img-dog.png" alt="Cachorro da raça basenji." />
         </div>
         <div className="rigth">
           <h2>Sobre <span>nós</span></h2>
