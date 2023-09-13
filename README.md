@@ -2,7 +2,7 @@
 Este projeto é uma web page de um petshop fictício. A página conta com apresentação dos serviços e dos produdtos em promoção. Além de um formulário para contato. Totalmente responsivo.
 #
 ![Webpage Puppies.com](/public/puppies-page.png)
-## Para ver o Deploy [clique aqui](https://puppies-tau.vercel.app/)
+## Para ver o Deploy [clique aqui](https://valeskaleandro.github.io/puppies-petshop/)
 
 ## Tecnologias Utilizadas
 - 🚀 **React**: Utilizado para criar uma interface de usuário..
